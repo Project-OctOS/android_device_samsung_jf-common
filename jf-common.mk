@@ -110,6 +110,10 @@ PRODUCT_PACKAGES += lights.msm8960
 # Irda
 PRODUCT_PACKAGES += irda.msm8960
 
+# Expose Irda feature
+PRODUCT_COPY_FILES += \
+    device/samsung/jf-common/etc/com.sec.feature.irda_service.xml:system/etc/permissions/com.sec.feature.irda_service.xml
+
 # Increase the HWUI font cache since we have tons of RAM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_cache_width=2048
