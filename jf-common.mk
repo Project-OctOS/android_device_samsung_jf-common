@@ -166,7 +166,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_1="" \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3="" \
-    ro.telephony.ril.v3=newDriverCall
+    ro.telephony.ril.v3=newDriverCall \
+    ro.config.ringtone=Themos.ogg \
+    ro.config.notification_sound=Tejat.ogg \
+    ro.config.alarm_alert=Oxygen.ogg
 
 # call common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
